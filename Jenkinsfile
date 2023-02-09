@@ -30,6 +30,8 @@ pipeline {
                  */
                 sh """
                     make
+                    ls -lla
+                    chmod +x demo
                     ./demo
                    """
             }
