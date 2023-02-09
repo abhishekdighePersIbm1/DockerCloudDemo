@@ -22,7 +22,7 @@ pipeline {
     }
 
     stages {
-        stage('Build and Publish Image') {
+        stage('Build and Execute Image') {
             steps {
                 /*
                  * Multiline strings can be used for larger scripts. It is also possible to put scripts in your shared library
@@ -30,6 +30,7 @@ pipeline {
                  */
                 sh """
                     make
+                    ./demo
                    """
             }
         }
