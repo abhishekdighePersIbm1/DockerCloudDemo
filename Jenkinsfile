@@ -10,17 +10,6 @@ pipeline {
             label 'APIC_Test_Cloud'
         }
     }
-
-    // using the Timestamper plugin we can add timestamps to the console log
-    options {
-        timestamps()
-    }
-
-    environment {
-        //env variables
-         CURDIR = "/root/workspace/sid-pipeline_main"
-    }
-
     stages {
         stage('Build and Execute Image') {
             steps {
