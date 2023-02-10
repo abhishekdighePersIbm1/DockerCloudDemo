@@ -18,6 +18,7 @@ pipeline {
                  * and load them with 'libaryResource'
                  */
                 sh """
+                    ls -lla
                     make
                     ls -lla
                     chmod +x demo
