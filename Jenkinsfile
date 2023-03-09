@@ -7,7 +7,7 @@ pipeline {
      */
     agent {
         node {
-            label 'APIC_Test_Cloud'
+            label 'testnode_abhishek'
         }
     }
     stages {
